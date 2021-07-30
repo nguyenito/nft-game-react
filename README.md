@@ -38,11 +38,22 @@ Click [here](https://github.com/nguyenito/nft-game-react/archive/refs/heads/mast
 > npm run test
 ```
 
-#### 3. After that now I manage to using the same method I did in my unit test file to apply it in my application which is using react and next js.
+#### 4. After that now you're confident to work on the test network on rinkeby. Deploy it on rinkeby by using truffle migrate.
+Note that the identifier 'rinkeby' is defined in 'truffle-config.js', you can deploy to another test network or main network by config the identifier inside truffle config file.
+
+```
+> truffle --network rinkeby
+```
+
+#### 5. Now your contract should be deployed to the rinkeby network. 
+You can see the contract address on the result of console. The comiled contract is writen under '/build/contracts/Token.json'. It also conclude the address of your deployed contract too. Inside my 'ethereum/contracts/Token.js' you can find the way how I get the abi from '/build/contracts/Token.json' and the deployed contract.
+
+#### 6. Finally now I manage to using the same method I did in my unit test file to apply it in my application which is using react and next js.
+Run this command for next server to be running
 
 ```
 > npm run dev
 ```
 
-#### 4. Go to my browser and got to 'http://localhost:3000/' to see my demo for react app for create pet token
+#### 7. Go to 'http://localhost:3000/' to see my demo for react app for create pet token.
 
